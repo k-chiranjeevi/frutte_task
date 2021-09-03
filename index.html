@@ -11,36 +11,35 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
 
     <link rel="stylesheet" href="./index.css">
 </head>
 
 <body>
+    <nav id="header">
+        <div id="left">
+            <img src="images/Path 9408@2x.png" width="30px" height="25px">
+            <img src="./images/JTGPOD@2x.png" width="100px" height="25px">
+        </div>
+
+        <i id="menu" class="fa fa-bars" onClick="showMenu()"></i>
+        <div id="links">
+            <i id="close" class="fa fa-window-close" onClick="hideMenu()"></i>
+            <li><a href="#home">Home</a> </li>
+            <li><a href="#latest blogs">Blog1</a></li>
+            <li><a href="#blogposts">Blog2</a></li>
+            <li><a href="#instafeed">Blog3</a></li>
+            <li><a href="#about">about</a></li>
+            <li id="subscribe"><a>subscribe</a></li>
+        </div>
+
+    </nav>
 
     <a name="home">
         <div id="main_div">
-            <nav id="header">
-                <div id="left">
-                    <img src="images/Path 9408@2x.png" width="30px" height="25px">
-                    <img src="./images/JTGPOD@2x.png" width="100px" height="25px">
-                </div>
-
-
-                <div id="links">
-                    <li><a href="#home">Home</a> </li>
-                    <li><a href="#latest blogs">Blog1</a></li>
-                    <li><a href="#blog posts">Blog2</a></li>
-                    <li><a href="#insta feed">Blog3</a></li>
-                    <li><a id="btn_link" href="#footer">some</a></li>
-                    <li><a href="#about">about</a></li>
-                </div>
-
-            </nav>
-
-
-            <!---after header-->
-
-            <div id="header_content">
+            <div id="after_header">
                 <div id="header_content_left">
                     <p id="orange_text">some text</p>
                     <h2 id="heading_content">
@@ -49,33 +48,27 @@
                     <p id="dummy">Lorem ipsum dolor consectetur adipisicing. voluptates neque
                         nulla
                         voluptate omnis perspiciatis odio </p>
-                    <button id="button_type">buttonType</button>
+                    <button id="button_type" class="btn btn-danger">buttonType</button>
                 </div>
                 <div class="header_content_right">
-                    <img id="img_path" src="./images/Mask Group 2.png" width="400px" height="520px">
+                    <img id="img_path" src="./images/Mask Group 2.png" width="400px" height="470px">
                 </div>
             </div>
-
         </div>
+
     </a>
 
     <!---latest blogs-->
     <a name="latest blogs">
-
-        <div id="latestblogs" class="container bg-light w-100%  mx-auto rounded position-relative ">
-
-
+        <div id="latestblogs" class="container bg-light w-100%  mx-auto rounded ">
             <div class="row">
-
                 <div class="col-6 mt-3 ">
                     <h4>Latest Blogs</h4>
                 </div>
                 <div class="col-6 mt-3  ">
                     <button class=" btn btn-danger float-xl-right">some</button>
                 </div>
-
             </div>
-
 
             <div class="row d-flex">
                 <div id="first-col" class="col-xl-9 d-flex w-100% ">
@@ -140,7 +133,6 @@
                         <li>Lorem, ipsum dolor.</li>
                     </ul>
                 </div>
-
             </div>
 
             <div id="showcontent" class="w-100%  mx-auto text-center mt-5 ">
@@ -154,7 +146,7 @@
 
 
     <!--blog posts-->
-    <a name=" blog posts">
+    <a name="blogposts">
         <div class="container text-center mt-3">
             <p id="blog_style">Blog Posts</p>
         </div>
@@ -261,7 +253,7 @@
 
 
 
-    <a name="insta feed">
+    <a name="instafeed">
         <div id="instagram_feeds">
             <h3 class="text-center gallery_img">Instagram feeds</h3>
 
@@ -299,16 +291,7 @@
     </div>
 
 
-
-
-
-
-
-
-
-
-
-    <a name="footer">
+    <a name="about">
 
         <div id="footer">
             <div id="first-column">
@@ -347,12 +330,15 @@
             </div>
 
         </div>
-    </a>
-    <a name="about">
+
+
         <div id="last_content">Lorem ipsum dolor sit amet.</div>
     </a>
+
+    <script src="https://kit.fontawesome.com/f08c4d6ed5.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="./index.js"></script>
     <script>
         $('.slider').slick({
             dots: true,
@@ -398,94 +384,46 @@
 
 
 
-<!---
+<!--
+     <div id="main_div">
 
-                 <div id=under_heading>
-                        <div id="first_box">
-                            <img src="./images/2123.png" width="200px " height="200px">
-                            <div>
-                                <p id="visit_desc">visiting my best friends city for first time</p>
-
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis consequuntur
-                                    blanditiis
-                                    fugit
-                                    sapiente id alias pariatur aliquam nulla officia inventore?
-                                </p>
-                                <p id="right_button">some</p>
-                            </div>
-
-                        </div>
-                        <div id="second_box">
-                            <p>Lorem ipsum dolor sit amet.</p>
-                            <p>Lorem ipsum dolor sit amet.</p>
-                            <p>Lorem ipsum dolor sit amet.</p>
-                        </div>
-
-                    </div>
+          
+<div id="header_content">
+    <div id="header_content_left">
+        <p id="orange_text">some text</p>
+        <h2 id="heading_content">
+            Dreams of an unique ideas scattered through a deserted
+        </h2>
+        <p id="dummy">Lorem ipsum dolor consectetur adipisicing. voluptates neque
+            nulla
+            voluptate omnis perspiciatis odio </p>
+        <button id="button_type">buttonType</button>
+    </div>
+    <div class="header_content_right">
+        <img id="img_path" src="./images/Mask Group 2.png" width="400px" height="520px">
+    </div>
+</div>
+</div>
+-->
 
 
+<!--
+    <div id="after_header">
 
-                    <div id=under_heading>
-                        <div id="first_box">
-                            <img src="./images/hello-revival-YH_Ne4R9ZAc-unsplash.png" width="200px " height="200px">
-                            <div>
-                                <p id="visit_desc">An intresting read i definitely recommended</p>
-
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis consequuntur
-                                    blanditiis
-                                    fugit
-                                    sapiente id alias pariatur aliquam nulla officia inventore?
-                                </p>
-                                <p id="right_button">some</p>
-                            </div>
-
-                        </div>
-                        <div id="second_box">
-                            <p>Lorem ipsum dolor sit amet.</p>
-                            <p>Lorem ipsum dolor sit amet.</p>
-                            <p>Lorem ipsum dolor sit amet.</p>
-                        </div>
-
-                    </div>
-
-                     <div id=under_heading>
-                        <div id="first_box">
-                            <img src="./images/alexander-tsang-_frvdyMH6S0-unsplash.png" width="200px " height="200px">
-                            <div>
-                                <p id="visit_desc">What if all my adventures go back home?</p>
-
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis consequuntur
-                                    blanditiis
-                                    fugit
-                                    sapiente id alias pariatur aliquam nulla officia inventore?
-                                </p>
-                                <p id="right_button">some</p>
-                            </div>
-
-                        </div>
-                        <div id="second_box">
-                            <p>Lorem ipsum dolor sit amet.</p>
-                            <p>Lorem ipsum dolor sit amet.</p>
-                            <p>Lorem ipsum dolor sit amet.</p>
-                        </div>
-
-                    </div>
-
-
-
-
-                <div id="gallery">
-
-                <img id="item1" src="./images/75095.png">
-                <img id="item2" src="./images/2857.png">
-                <img id="item3" src="./images/451.png">
-                <img id="item4" src="./images/15.png">
-                <img id="item5" src="./images/mike-dorner-sf_1ZDA1YFw-unsplash.png">
-                <img id="item6" src="images/markus-spiske-UJwcQ3xeFHo-unsplash.png">
-                <img id="item7" src="./images/1670.png">
-                <img id="item8" src="./images/1683.png">
-                <img id="item9" src="./images/sina-katirachi-sj5nVJSfYl4-unsplash.png">
-                <img id="item10" src="./images/1841.png">
-
+            <div id="left-h">
+                <p id="orange_text">some text</p>
+                <h2 id="heading_content">
+                    Dreams of an unique ideas scattered through a deserted
+                </h2>
+                <p id="dummy">Lorem ipsum dolor consectetur adipisicing. voluptates neque
+                    nulla
+                    voluptate omnis perspiciatis odio </p>
+                <button id="button_type">buttonType</button>
             </div>
-                -->
+            <div id="right-h">
+
+                <img id="img_path" src="./images/Mask Group 2.png" width="400px" height="400px">
+            </div>
+
+        </div>
+-->
